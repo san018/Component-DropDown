@@ -1,0 +1,19 @@
+<div class="dropdown">
+  <button class="dropbtn" value="DropDown" >{{btnVal}}</button>
+  <div id="dropId" class="dropdown-content" id="{{if isOpen "open" "close"}}">
+      <a href="#" class="{{if (equal count 1) "highlight" "non-highlight"}}">Option1</a>
+      <a href="#" class="{{if (equal count 2) "highlight" "non-highlight"}}">Option2</a>
+      <a href="#" class="{{if (equal count 3) "highlight" "non-highlight"}}">Option3</a>
+  </div>
+</div>
+
+
+<!--
+{{calcCount}}
+{{if (equal calcCount 1) "highlight" "non-highlight"}}
+{{equal calcCount 0}}
+
+<button onclick={{ action "drop"}} class="dropbtn" value="DropDown" id="stateId">{{btnVal}}</button>
+
+-->
+{{yield}}
